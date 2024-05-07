@@ -19,8 +19,6 @@ public class Tag_Cliente {
 	
 	private String Nome_Tag;
 	
-//	@ManyToMany(mappedBy = "tags")
-//    private List<Cliente> clienti;
 
 	public int getID_Tag() {
 		return ID_Tag;
@@ -37,14 +35,6 @@ public class Tag_Cliente {
 	public void setNome_Tag(String nome_Tag) {
 		Nome_Tag = nome_Tag;
 	}
-
-//	public List<Cliente> getClienti() {
-//		return clienti;
-//	}
-//
-//	public void setClienti(List<Cliente> clienti) {
-//		this.clienti = clienti;
-//	}
 
 	
 }
