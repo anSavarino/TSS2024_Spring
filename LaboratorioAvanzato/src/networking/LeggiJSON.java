@@ -91,7 +91,8 @@ public class LeggiJSON {
 	
 	public static void doGetRequestAnDeserialize() throws Exception{
 		HttpClient client = HttpClient.newHttpClient();
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://raw.githubusercontent.com/maboglia/ProgrammingResources/16dcd7886fae0d219f6d20f45edb23cc26a7d41c/tabelle/film/100-best-netflix-series.json")).build();
+		HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://raw.githubusercontent.com/maboglia/ProgrammingResources/16dcd7886fae0d219f6d20f45edb23cc26a7d41c/tabelle/film/100-best-netflix-series.json"))
+							.build();
 		
 		 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
